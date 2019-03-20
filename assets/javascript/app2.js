@@ -4,21 +4,24 @@ $("#gameplay-area").append(startButton);
 
 var correctAnswers = 0;
 var wrongAnswers = 0;
-var timeLeft = 30;
+var timeLeft = 15;
 var intervalID;
 
 
 function newGame() {
     correctAnswers = 0;
     wrongAnswers = 0;
-    timeLeft = 30;
+    timeLeft = 15;
     $("#gameplay-area").empty();
-
+ 
     // timer
-    $("<div id='time-left'>Time remaining: 30</div><br>").appendTo("#gameplay-area");
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
     clearInterval(intervalID);
     intervalID = setInterval(function(){ decrement(); }, 1000);
-    
+    setTimeout(function (){
+        quote2();}, 
+        15000
+    );
 
     // Question 1
     var question1 = $("<p class='question'>").text("I am serious. And don’t call me Shirley.");
@@ -36,9 +39,27 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
-    })
+        quote2();
 
-    // Question 2
+    })
+}
+
+
+    // Question 2 function
+function quote2(){
+    timeLeft = 15;
+    $("#gameplay-area").empty();
+
+    // timer
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
+    clearInterval(intervalID);
+    intervalID = setInterval(function(){ decrement(); }, 1000);
+    clearTimeout();
+    setTimeout(function (){
+        quote3();}, 
+        15000
+    );
+
     var question2 = $("<p class='question'>").text("Snakes. Why’d it have to be snakes?");
     var answers2 = $("<p class='answer-choices'>").append("<input class='answer-2' type='radio' name='answer-2'> The Goonies   <input class='answer-2' type='radio' name='answer-2' value='correct'> Raiders of the Lost Ark   <input class='answer-2' type='radio' name='answer-2'> First Blood   <input class='answer-2' type='radio' name='answer-2'> Snakes on a Plane<br><br>");
     $("#gameplay-area").append(question2);
@@ -54,9 +75,26 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
+        quote3();
     })
+}
 
-    // Question 3
+
+    // Question 3 function
+function quote3(){
+    timeLeft = 15;
+    $("#gameplay-area").empty();
+
+    // timer
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
+    clearInterval(intervalID);
+    intervalID = setInterval(function(){ decrement(); }, 1000);
+    clearTimeout();
+    setTimeout(function (){
+        quote4();}, 
+        15000
+    );
+
     var question3 = $("<p class='question'>").text("We came. We saw. We kicked its ass.");
     var answers3 = $("<p class='answer-choices'>").append("<input class='answer-3' type='radio' name='answer-3'> Beverly Hills Cop   <input class='answer-3' type='radio' name='answer-3'> Stripes   <input class='answer-3' type='radio' name='answer-3' value='correct'> Ghostbusters   <input class='answer-3' type='radio' name='answer-3'> Bill and Ted's Excellent Adventure<br><br>");
     $("#gameplay-area").append(question3);
@@ -72,9 +110,26 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
+        quote4();
     })
+}
 
-    // Question 4
+
+    // Question 4 function
+function quote4(){
+    timeLeft = 15;
+    $("#gameplay-area").empty();
+
+    // timer
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
+    clearInterval(intervalID);
+    intervalID = setInterval(function(){ decrement(); }, 1000);
+    clearTimeout();
+    setTimeout(function (){
+        quote5();}, 
+        15000
+    );
+
     var question4 = $("<p class='question'>").text("Don’t mess with the bull, young man. You’ll get the horns.");
     var answers4 = $("<p class='answer-choices'>").append("<input class='answer-4' type='radio' name='answer-4' value='correct'> The Breakfast Club   <input class='answer-4' type='radio' name='answer-4'> Back to the Future   <input class='answer-4' type='radio' name='answer-4'> Fast Times At Ridgemont High   <input class='answer-4' type='radio' name='answer-4'> Better Off Dead<br><br>");
     $("#gameplay-area").append(question4);
@@ -90,9 +145,26 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
+        quote5();
     })
+}
 
-    // Questin 5
+
+    // Question 5 function
+function quote5(){
+    timeLeft = 15;
+    $("#gameplay-area").empty();
+
+    // timer
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
+    clearInterval(intervalID);
+    intervalID = setInterval(function(){ decrement(); }, 1000);
+    clearTimeout();
+    setTimeout(function (){
+        quote6();}, 
+        15000
+    );
+
     var question5 = $("<p class='question'>").text("Life moves pretty fast. You don’t stop and look around once in awhile, you could miss it.");
     var answers5 = $("<p class='answer-choices'>").append("<input class='answer-5' type='radio' name='answer-5'> Say Anything   <input class='answer-5' type='radio' name='answer-5'> Weird Science   <input class='answer-5' type='radio' name='answer-5'> Can't Buy Me Love   <input class='answer-5' type='radio' name='answer-5' value='correct'> Ferris Bueller's Day Off<br><br>");
     $("#gameplay-area").append(question5);
@@ -108,9 +180,26 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
+        quote6();
     })
+}
 
-    // Question 6
+
+    // Question 6 function
+function quote6(){
+    timeLeft = 15;
+    $("#gameplay-area").empty();
+
+    // timer
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
+    clearInterval(intervalID);
+    intervalID = setInterval(function(){ decrement(); }, 1000);
+    clearTimeout();
+    setTimeout(function (){
+        quote7();}, 
+        15000
+    );
+
     var question6 = $("<p class='question'>").text("Carpe Diem boys. Seize the day. Make your lives extraordinary.");
     var answers6 = $("<p class='answer-choices'>").append("<input class='answer-6' type='radio' name='answer-6'> Stand By Me   <input class='answer-6' type='radio' name='answer-6' value='correct'> Dead Poets Society   <input class='answer-6' type='radio' name='answer-6'> The Outsiders   <input class='answer-6' type='radio' name='answer-6'> Risky Business<br><br>");
     $("#gameplay-area").append(question6);
@@ -126,9 +215,26 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
+        quote7();
     })
+}
 
-    // Quesion 7
+
+    // Quesion 7 function
+function quote7(){
+    timeLeft = 15;
+    $("#gameplay-area").empty();
+
+    // timer
+    $("<div id='time-left'>Time remaining: 15</div><br>").appendTo("#gameplay-area");
+    clearInterval(intervalID);
+    intervalID = setInterval(function(){ decrement(); }, 1000);
+    clearTimeout();
+    setTimeout(function (){
+        endGame();}, 
+        15000
+    );
+
     var question7 = $("<p class='question'>").text("I could disappear forever and it wouldn’t make any difference.");
     var answers7 = $("<p class='answer-choices'>").append("<input class='answer-7' type='radio' name='answer-7' value='correct'> Sixteen Candles   <input class='answer-7' type='radio' name='answer-7'> Pretty in Pink   <input class='answer-7' type='radio' name='answer-7'> The Breakfast Club   <input class='answer-7' type='radio' name='answer-7'> Dirty Dancing<br>");
     $("#gameplay-area").append(question7);
@@ -144,16 +250,9 @@ function newGame() {
         };
         console.log(correctAnswers);
         console.log(wrongAnswers);
-    })
-
-    var doneButton = $("<button>").text("Done");
-    $("#gameplay-area").append(doneButton);
-    $(doneButton).on("click", function () {
-        clearInterval(intervalID);
         endGame();
-    
-    });
-
+    })
+}
 
 
     //var quoteArray = [
@@ -174,14 +273,15 @@ function newGame() {
 
 
 
-}
+//}
 
 function decrement() {
     timeLeft--;
     $("#time-left").text("Time remaining: " + timeLeft);
     if (timeLeft === 0) {
-        endGame();
-    };
+        timeLeft = 0;
+        clearInterval(intervalID);
+    }
 };
 
 function endGame() {
